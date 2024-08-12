@@ -1,5 +1,5 @@
 for t in range(int(input())):
-    line = input()
+    #line = input()
     s = input()
     i = 0
     while i < len(s):
@@ -10,3 +10,4 @@ for t in range(int(input())):
         print(cnt,end = '')
         print(s[i],end = '')
         i += 1
+    print()

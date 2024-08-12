@@ -7,7 +7,9 @@ def check(n):
     if(len(s) % 2 != 0): return False
     return True
 for t in range(int(input())):
-    line = input()
     n = int(input())
     for i in range(n):
-        if check(i): print(i, end=' ')
+        if check(i): 
+            print(i, end=' ')
+     print()       
+  
