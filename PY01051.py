@@ -5,7 +5,7 @@ def check(n):
         sum += int(i)
     return str(sum) == str(sum)[::-1] and len(str(sum)) > 1
 for t in range(int(input())):
-    line = input()
+    #line = input()
     n = input()
     if check(n): print('YES')
     else: print('NO')
