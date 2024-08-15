@@ -14,10 +14,10 @@ def Try(i,pos):
 
 
 n, k = map(int,input().split())
-input()
+#input()
 se = set(map(int,input().split()))
 n = len(se)
 
-a = list(se)
+a = sorted(list(se))
 arr = [0] * k
 Try(1,1)

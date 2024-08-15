@@ -10,7 +10,7 @@ def check(s):
         sum +=int(s[i])
     return isPrime(sum)
 for t in range(int(input())):
-    line = input()
+    #line = input()
     s = input()
     if check(s): print("YES")
-    else: print("NO ")
+    else: print("NO")

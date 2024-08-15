@@ -1,6 +1,8 @@
 import math
 def isPrime(n):
-    return n == 2 or n == 3 or n == 5 or n == 7
+    for i in range(2, int(math.sqrt(n))+1):
+        if n % i == 0: return False
+    return n > 1
 
 def check(s):
     for i in range(len(s)):
@@ -8,6 +10,6 @@ def check(s):
     return "YES"
 
 for t in range(int(input())):
-    line = input()
+    #line = input()
     s = input()
     print(check(s))
