@@ -1,5 +1,5 @@
 def moveColums(a,b):
-    print(a + '->'+b)
+    print(a + ' -> '+b)
 def call(n,a,b,c):
     if n == 1: moveColums(a,c)
     else:
