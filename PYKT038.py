@@ -13,7 +13,7 @@ def convert(s):
                 digit += int(t[j]) * int(math.pow(2,j))
             ans += str(digit)
             t =""
-    return ans
+    return int(ans)
 
 n = input()
 n = '0'*(3 - len(n) % 3) + n

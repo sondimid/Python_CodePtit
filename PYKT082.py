@@ -3,14 +3,14 @@ import math
 
 def round_score(score):
 
-    rounded_score = round(score,2)
+    rounded_score = score
 
-    if rounded_score - int(rounded_score) == 0.25:
-        return rounded_score + 0.25
-    elif rounded_score - int(rounded_score) == 0.75:
-        return rounded_score + 0.25
+    if rounded_score - int(rounded_score) >= 0.75:
+        return int(rounded_score) + 1.0
+    elif rounded_score - int(rounded_score) >= 0.25:
+        return int(rounded_score) + 0.5
     else:
-        return float(int(rounded_score))
+        return int(rounded_score)
 for _ in range(int(input())):
     r, l, s, w = map(str,input().split())
     r = int(r)
@@ -45,6 +45,6 @@ for _ in range(int(input())):
     elif l >= 7: l = 3.5
     elif l >= 5: l = 3.0
     elif l >= 3: l = 2.5
-    score = (l + r + s + w) /4
+    score = (l + r + s + w) /4.0
     print(round_score(score))
 
