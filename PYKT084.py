@@ -1,9 +1,7 @@
 import math
-a = []
-for _ in range(int(input())):
-    s = input()
-    if s == '':
-        print(a[0] + ':', len(a) - 1)
-        a.clear()
-    else: a.append(s)
-print(a[0] + ':', len(a) - 1)
+dic = {}
+n = int(input())
+i = 0
+while i < n:
+    line = input()
+    if line !=

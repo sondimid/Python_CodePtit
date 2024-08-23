@@ -1,0 +1,1 @@
+print('Pham Nhat Vuong said once it starts, dont trust anyone')

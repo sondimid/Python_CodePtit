@@ -1,0 +1,6 @@
+s = input().split()
+for i in range(len(s)): print(s[i].lower(), end = ' ')
+print()
+for i in range(len(s)): print(s[i].upper(), end = ' ')
+print()
+for i in range(len(s)): print(s[i][0].upper() + s[i][1:].lower(), end = ' ')
